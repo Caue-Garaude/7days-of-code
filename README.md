@@ -2,6 +2,10 @@
 
 Este projeto foi desenvolvido como parte do desafio **7 Days of Code** da Alura. O objetivo foi criar um site responsivo para a empresa fictícia **OptimusTech**, que se dedica a fornecer soluções tecnológicas inovadoras e serviços de alta qualidade.
 
+## Link para o site
+
+**https://7days-of-code-eight.vercel.app/**
+
 ## Tecnologias Utilizadas
 
 - **HTML5**: Utilizado para estruturar o conteúdo do site, garantindo que seja semântico e acessível.
