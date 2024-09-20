@@ -1,9 +1,13 @@
-
+*{
+  font-family: 'Inter';
+  box-sizing: border-box;
+}
 header {
 display: flex;
 justify-content: space-between;
 align-items: center;
 font-family: 'Inter';
+padding: 16px;
 }
 .logo {
     padding: 8px;
@@ -22,10 +26,12 @@ line-height: 24px;
 }
 .logo img{
     padding-left: 50px;
+    max-width: 100%; 
+    height: auto;
    
 }
 .links a{
-   padding: 30px;
+  padding: 10px 15px;
    text-decoration: none;
    color: #667085;
    text-size-adjust: 62px;
@@ -66,7 +72,7 @@ text-align: left;
   .sobre-nos {
     width:  1,440px;
     height: 407px;
-    padding: 96px 0px 96px 0px;
+    padding: 96px 20px 40px;
     gap: 24px;
     opacity: 0px;
     display: flex;
@@ -75,7 +81,7 @@ text-align: left;
   }
   h1 {
 font-family: 'Inter';
-font-size: 48px;
+font-size: 2.5rem;
 font-weight: 600;
 line-height: 60px;
 letter-spacing: -0.02em;
@@ -86,12 +92,10 @@ font-family: Inter;
 font-size: 16px;
 font-weight: 600;
 line-height: 24px;
-
 color: var(--main-color);
   }
   .txt-sobre {
 color: var(--text-color);
-font-family: 'Inter';
 font-size: 20px;
 font-weight: 400;
 line-height: 30px;
@@ -100,11 +104,178 @@ margin: 0px 20% 0px 20%;
   }
   #metricas {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: Fill (1,216px)px;
-height: Hug (192px)px;
+    opacity: 0px;
+  }
+  #metricas div {
+    flex: 1 1 200px;
+    padding: 0px 50px 110px 50px;
+  }
+  .txt-red {
+    color: var(--main-color);
+  }
+  .produtos{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  p {
+    color: var(--text-color);
+  }
+  .fundo-btn {
+    background-color: #8E24240D;
+    padding: 4px 12px 4px 12px;
+    gap: 0px;
+    border-radius: 16px 16px 16px 16px;
+    opacity: 0px;
+    border-radius: 8px 0px 0px 0px;
+  }
+ .container {
+  max-width: 768px;
+  width: 768px;
+  height: 136px;
+  padding: 24px 24px 28px 24px;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 16px 16px 16px 16px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #EAECF0
+  }
+  .espacamento {
+    padding: 20px 0px 20px 0px;
+  }
+  .avaliacoes{
+    width: 1,440px;
+    height: 500px;
+    padding: 96px 0px 0px 0px;
+    gap: 0px;
+    opacity: 0px;
+    
+  }
+  .container2 {
+    text-align: center;
+    max-width: 1280px;
+    width: 1,280px;
+    height: 404px;
+    padding: 0px 32px 100px 32px;
+    gap: 32px;
+    opacity: 0px;
+    background-color:  #C3191908;
+    
+  }
+  .textao {
+font-family: 'Inter';
+width: 1,088px;
+font-size: 2rem;
+line-height: 1.2;
+font-weight: 500;
+letter-spacing: -0.02em;
+text-align: center;
+color: black;
+  }
+  .parte1 {
+    width: 1,088px ;
+    max-width: 1,088px ;
+    height: 124px;
+    gap: 16px;
+    opacity: 0px;
+    padding-bottom: 100px;
+  }
+  .parte2{
+    padding-top: 5em;
+  }
+  .Nome {
+font-family: 'Inter';
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+color: black;
+  }
+  footer {
+    width: 1,440px;
+    height: 430px;
+    padding: 0px 0px 96px 0px;
+    gap: 32px;
+    opacity: 0px;
+    background: #F9FAFB;
+  }
+  .container3 {
+    width: 832px;
+height: 182px;
+padding: 0px 32px 0px 32px;
 gap: 32px;
 opacity: 0px;
-padding: 0px 50px 0px 50px
+text-align: center;
+  }
+  .fundo {
+    max-width: 360px;
+    width: 360px;
+height: 40px;
+gap: 8px;
+opacity: 0px;
+  }
+  .botao {
+    width: 116px;
+    height: 48px;
+   gap: 0px;
+   border-radius: 8px 8px 8px 8px;
+   opacity: 0px;
 
   }
+  .footer-final {
+font-family: 'Inter';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+padding-top: 20px;
+
+  }
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center;
+  }
+  .sobre-nos{
+    padding-bottom: 3em;
+  }
+  #metricas {
+    padding-top: 4em;
+  }
+
+  .links {
+      flex-direction: column;
+       /* Para ocupar toda a largura */
+      padding: 10px 0; /* Para espaçamento entre links */
+      align-items: center;
+  }
+
+  .links a {
+      padding: 10px;
+  }
+
+  .produtos, .avaliacoes {
+      padding: 10px; /* Menos padding em telas menores */
+  }
+
+  h1 {
+      font-size: 1.75rem; /* Reduz o tamanho da fonte em telas menores */
+  }
+.parte1{
+  padding-bottom: 5em;
+}
+.parte2 img{
+  padding-top: 5em;
+}
+  .txt-sobre, .txt-red {
+      font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .container {
+      width: fit-content; /* Faz com que o container ocupe mais espaço */
+  }
+}
