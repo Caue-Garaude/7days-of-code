@@ -234,10 +234,10 @@ line-height: 24px;
 padding-top: 20px;
 
   }
-/* Media Queries */
+
 @media (max-width: 768px) {
   header {
-      flex-direction: column; /* Muda para coluna em telas menores */
+      flex-direction: column; 
       align-items: center;
   }
   .sobre-nos{
@@ -249,8 +249,8 @@ padding-top: 20px;
 
   .links {
       flex-direction: column;
-       /* Para ocupar toda a largura */
-      padding: 10px 0; /* Para espaçamento entre links */
+       
+      padding: 10px 0; 
       align-items: center;
   }
 
@@ -259,11 +259,11 @@ padding-top: 20px;
   }
 
   .produtos, .avaliacoes {
-      padding: 10px; /* Menos padding em telas menores */
+      padding: 10px; 
   }
 
   h1 {
-      font-size: 1.75rem; /* Reduz o tamanho da fonte em telas menores */
+      font-size: 1.75rem; 
   }
 .parte1{
   padding-bottom: 5em;
@@ -272,10 +272,9 @@ padding-top: 20px;
   padding-top: 5em;
 }
   .txt-sobre, .txt-red {
-      font-size: 1rem; /* Ajusta o tamanho da fonte */
+      font-size: 1rem; 
   }
 
   .container {
-      width: fit-content; /* Faz com que o container ocupe mais espaço */
-  }
+      width: fit-content; 
 }
